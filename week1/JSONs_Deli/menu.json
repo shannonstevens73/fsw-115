@@ -1,0 +1,65 @@
+{
+
+    "menu": {
+        "appetizers": [
+            {
+            "name": "react chili fries",
+            "ingredients": ["chili", "hot sauce", "french fries"],
+            "description": "hot, hot, hot!"
+            },
+            {
+            "name": "api wings",
+            "ingredients": ["chicken wings", "apple juice", "flour"],
+            "description": "I love this one!"
+            }
+        ],
+        "cold sandwiches": [
+            {
+            "name": "dom sandwich",
+            "ingredients": ["bread", "cheese", "various lunchmeat"],
+            "description": "So yummy!"
+            },
+            {
+            "name": "mysql tuna",
+            "ingredients": ["bread", "tuna salad", "chesse"],
+            "description": "Tasty!"
+            }
+        ],
+        "hot sandwiches": [
+            {
+            "name": "css meatball deluxe",
+            "ingredients": ["bread", "meatballs", "mozzarella cheese"],
+            "description": "So good!"
+            },
+            {
+            "name": "redux steak and cheese",
+            "ingredients": ["bread", "steak", "cheese"],
+            "description": "You have to try this one!"
+            }
+        ],
+        "desserts": [
+            {
+            "name": "python pie",
+            "ingredients": ["pie crust", "chocolate filling", "whip cream"],
+            "description": "So yummy!"
+            },
+            {
+            "name": "algorithm shake",
+            "ingredients": ["heavy cream", "sugar", "user input of flavor"],
+            "description": "I love this one!"
+            }
+        ],
+        "drinks": [
+            {
+            "name": "html martini",
+            "ingredients": ["gin", "vermouth", "lots of olives"],
+            "description": "So nice!"
+            },
+            {
+            "name": "cyber soda",
+            "ingredients": ["coke", "user input of flavoring", "user input of liquor"],
+            "description": "I love this one!"
+            }
+        ]
+    }
+}
