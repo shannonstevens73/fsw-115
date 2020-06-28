@@ -1,0 +1,127 @@
+
+* {
+    background-color: lavender;
+}
+
+#grid-container {
+    margin: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+
+@media screen and (max-width: 450px) { 
+    .nav {
+        grid-column: 1 / 5;
+        grid-row: 1 / 2;
+    }
+
+    a:link {
+        color: thistle;
+        text-decoration: none;
+    }      
+      
+    a:visited {
+        color: thistle;
+        text-decoration: none;
+    }
+      
+    a:hover {
+        color: orchid;
+        text-decoration: none;
+    }
+
+    #RickandMortyButton {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;        
+        margin-top: 25px;
+    }
+
+    #mortyLine1 {
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+    }
+
+    #mortyLine2 {
+        grid-column: 3 / 4;
+        grid-row: 4 / 5;
+    }
+
+    #RandMaxiosTodo {
+        grid-column: 3 / 4;
+        grid-row: 5 / 6;
+    }
+
+    #vSchoolButton {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;        
+        margin-top: 25px;
+    }
+
+    #vSchoolInfo {
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+    }
+
+    #axiosTodo {
+        grid-column: 3 / 4;
+        grid-row: 4 / 5;
+    }
+
+    
+}
+    @media screen and (min-width: 451px) { 
+
+        a:link {
+            color: orchid;
+            text-decoration: none;
+        }      
+          
+        a:visited {
+            color: orchid;
+            text-decoration: none;
+        }
+          
+        a:hover {
+            color: darkorchid;
+            text-decoration: none;
+        }
+
+        #RickandMortyButton {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;        
+            margin-top: 25px;
+        }        
+
+        #mortyLine1 {
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+        }
+
+        #mortyLine2 {
+            grid-column: 3 / 4;
+            grid-row: 3 / 4;
+        }
+    
+        #RandMaxiosTodo {
+            grid-column: 3 / 4;
+            grid-row: 4 / 5;
+        }
+
+        #vSchoolButton {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;        
+            margin-top: 25px;
+        }
+
+        #vSchoolInfo {
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+        }
+    
+        #axiosTodo {
+            grid-column: 3 / 4;
+            grid-row: 3 / 4;
+        }
+    }
