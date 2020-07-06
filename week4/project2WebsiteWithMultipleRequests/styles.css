@@ -36,6 +36,7 @@
         grid-column: 3 / 4;
         grid-row: 2 / 3;        
         margin-top: 25px;
+        background-color: thistle;
     }
 
     #mortyLine1 {
@@ -57,6 +58,7 @@
         grid-column: 3 / 4;
         grid-row: 2 / 3;        
         margin-top: 25px;
+        background-color: thistle;        
     }
 
     #vSchoolInfo {
@@ -92,6 +94,7 @@
             grid-column: 3 / 4;
             grid-row: 1 / 2;        
             margin-top: 25px;
+            background-color: thistle;
         }        
 
         #mortyLine1 {
@@ -113,6 +116,7 @@
             grid-column: 3 / 4;
             grid-row: 1 / 2;        
             margin-top: 25px;
+            background-color: thistle;
         }
 
         #vSchoolInfo {

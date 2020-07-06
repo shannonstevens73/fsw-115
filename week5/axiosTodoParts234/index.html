@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Axios Todo Part 2, 3 & 4</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>        
+    </head>
+    <body>
+        <div id="grid-comtainer">
+            <!--Post-->
+            <form id="myForm" name="myForm">  
+                <h3 id="postHeader">Make a New Post</h3>
+                <input type="text" id="input1" name="title" placeholder="Title"/><br/>
+                <input type="number" id="input2" name="price" placeholder="Price"/><br/>
+                <input type="text" id="input3" name="description" placeholder="Description"/><br/>
+                <br/>             
+                <button id="button">Submit</button>
+            </form>
+            
+            <div id="getDiv">
+                <!--Get-->
+                <h3 id="getHeader">Axios Todo Page</h3>
+                <p id="getP">Current list of Todos</p>
+                <div id="axiosTodo"></div>
+            </div>          
+        
+            <script src="index.js"></script>
+        </div>
+    </body>
+</html>
+
+            <!--Put-->
+            <!-- <form id="putForm" name="putForm">  
+                <h3 id="putHeader">Make updates to a Post</h3>
+                <h4 id="putHeader2">by checking a Todo incomplete</h4>
+                <input type="text" id="putInput1" name="putTitle" placeholder="Title"/><br/>
+                <input type="number" id="putInput2" name="putPrice" placeholder="Price"/><br/>
+                <input type="text" id="putInput3" name="putDescription" placeholder="Description"/><br/>
+                <br/>             
+                <button id="putButton">Submit</button>
+            </form> -->
