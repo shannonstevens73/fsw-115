@@ -1,0 +1,28 @@
+* {
+    background-color: lightblue;
+    font-family: sans-serif;
+}
+
+#text {
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    font-size: x-large;
+    text-align: center;
+}
+
+@media only screen and (max-width: 680px) {
+    #text {
+        font-size: medium;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    p {
+        font-size: medium;
+        text-align: center;
+    }
+}
