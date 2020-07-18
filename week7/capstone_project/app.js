@@ -1,5 +1,4 @@
 
-
 const main = document.getElementById("axiosTodo");
 
 let baseURL = "https://api.vschool.io/shannonstevens73/todo/"
@@ -29,6 +28,15 @@ function get(){
                     title.classList.add("title")
                 }
 
+              // Delete            
+              deleteButton.addEventListener("click", (event) => {
+                event.preventDefault();
+                id = response.data[i]._id;
+                axios
+                  .delete(baseURL + id)
+                    .then((response) => console.log(response.data))
+                    .catch((error) => console.log(error));
+      });
         }})
 }
 get()
@@ -51,5 +59,6 @@ submitButton.addEventListener("submit", function(event) {
         .catch((error) => console.log(error));
 
 })
+
 
 
