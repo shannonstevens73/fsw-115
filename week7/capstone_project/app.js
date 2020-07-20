@@ -13,8 +13,13 @@ function get(){
                 const completeSpan = document.createElement("span")
                 const incompleteBox = document.createElement("input")
                 const incompleteSpan = document.createElement("span")
+                // const editTitle = document.createElement("input")
+                // const break2 = document.createElement("br")
+                // const editDescription = document.createElement("input")
+                // const editButton = document.createElement("button")
                 const deleteButton = document.createElement("button")
                 deleteButton.className = "deleteButton"
+                
 
                 title.textContent = response.data[i].title
                 title.style.color = "Navy"    
@@ -26,22 +31,53 @@ function get(){
                 incompleteBox.className = "boxIncomplete"
                 incompleteBox.type = "checkbox"
                 incompleteSpan.textContent = "Incomplete"
-                description.textContent = response.data[i].description                  
+                description.textContent = response.data[i].description  
+                // editTitle.type = "text"
+                // editTitle.name = "title"
+                // editTitle.value = response.data[i].title
+                // editDescription.type = "text"
+                // editDescription.name = "description"
+                // editDescription.value = response.data[i].description
+                // editButton.textContent = "Edit"   
+                // editButton.style.backgroundColor = "lightgray"
                 deleteButton.textContent = "Delete"    
                 deleteButton.style.backgroundColor = "lightgray"
 
                 document.getElementById("axiosTodo").appendChild(title)                
                 document.getElementById("axiosTodo").appendChild(description)
-                document.getElementById("axiosTodo").append(completeSpan)
-                document.getElementById("axiosTodo").append(completeBox)
-                document.getElementById("axiosTodo").append(incompleteSpan)
-                document.getElementById("axiosTodo").append(incompleteBox)
+                document.getElementById("axiosTodo").appendChild(completeSpan)
+                document.getElementById("axiosTodo").appendChild(completeBox)
+                document.getElementById("axiosTodo").appendChild(incompleteSpan)
+                document.getElementById("axiosTodo").appendChild(incompleteBox)
                 document.getElementById("axiosTodo").appendChild(deleteButton)
+                // document.getElementById("form2").appendChild(editTitle)
+                // document.getElementById("form2").appendChild(break2)
+                // document.getElementById("form2").appendChild(editDescription)
+                // document.getElementById("form2").appendChild(editButton)
+                // document.getElementById("form2").appendChild(break2)
 
-              // Put Complete
-              if (response.data[i].completed === true) {
+                // Put 2
+                // const editForm = document.form2
+                // editForm.addEventListener("submit", (event) => {
+                //   event.preventDefault()
+                //   id = response.data[i]._id
+
+                //   const editTodo = {
+                //     title: editForm.title.value,
+                //     description: editForm.description.value
+                //   };
+
+                //   axios.put(baseURL + id, editTodo)
+                //       .then((response) => console.log(response.data))
+                //       .catch((error) => console.log(error))
+
+                // })
+
+
+                // Put Complete
+                if (response.data[i].completed === true) {
                 title.classList.add("title")
-              }
+                }
 
                 var completedTask = {
                   completed: true
@@ -59,9 +95,9 @@ function get(){
                       .catch((error) => console.log(error));
                 });
               
-               // Put Incomplete
-              var boxIncomplete = document.getElementsByClassName("boxIncomplete")              
-              boxIncomplete[i].addEventListener("click", (event) => {
+                // Put Incomplete
+                var boxIncomplete = document.getElementsByClassName("boxIncomplete")              
+                boxIncomplete[i].addEventListener("click", (event) => {
                   event.preventDefault()
                   id = response.data[i]._id
                   axios.put(baseURL + id, incompletedTask)
@@ -69,15 +105,17 @@ function get(){
                     .catch((error) => console.log(error));
                 });
 
-              // Delete            
-              deleteButton.addEventListener("click", (event) => {
-                event.preventDefault();
-                id = response.data[i]._id;
-                axios
-                  .delete(baseURL + id)
-                    .then((response) => console.log(response.data))
-                    .catch((error) => console.log(error));
-      });
+
+
+                // Delete            
+                deleteButton.addEventListener("click", (event) => {
+                 event.preventDefault();
+                  id = response.data[i]._id;
+                  axios
+                    .delete(baseURL + id)
+                      .then((response) => console.log(response.data))
+                      .catch((error) => console.log(error));
+                });
   }})
 }
 get()
@@ -88,14 +126,13 @@ const submitButton = document.myForm;
 
 submitButton.addEventListener("submit", function(event) {
   event.preventDefault();
-
+  console.log("hello")
   const newTodo = {
     title: submitButton.title.value,
     description: submitButton.description.value
   };
 
-  axios
-    .post(baseURL, newTodo)
+  axios.post(baseURL, newTodo)
         .then((response) => console.log(response.data))
         .catch((error) => console.log(error));
 
